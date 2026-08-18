@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NB Novosibirsk Store — contemporary fashion, everyday essentials, and curated looks for modern wardrobes.">
+<meta name="robots" content="index, follow">
+<title>NB Novosibirsk Store | Contemporary Fashion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--black:#151515;--cream:#f4f0e9;--white:#fff;--red:#a23b36;--gray:#77716a;--line:#ddd7ce}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Archivo,sans-serif;background:var(--cream);color:var(--black);line-height:1.55}
+h1,h2,h3,.brand{font-family:"Playfair Display",serif}a{text-decoration:none;color:inherit}
+.wrap{width:min(1180px,92%);margin:auto}
+header{background:var(--cream);border-bottom:1px solid var(--line);position:absolute;top:0;left:0;right:0;z-index:10}
+.top{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:8px;border-bottom:1px solid var(--line);color:var(--gray)}
+nav{height:82px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.brand{font-size:1.45rem;letter-spacing:.02em}.brand span{color:var(--red)}
+.links{display:flex;gap:26px;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700}.links a:hover{color:var(--red)}
+.actions{text-align:right;font-size:.8rem}.bag{border:1px solid var(--black);padding:8px 13px;margin-left:12px}
+.hero{padding:150px 0 65px;display:grid;grid-template-columns:1.05fr .95fr;gap:45px}
+.heroimg{position:relative}.heroimg img{width:100%;height:620px;object-fit:cover;display:block}
+.hero-copy{background:var(--white);padding:65px 55px;display:flex;flex-direction:column;justify-content:center}
+.kicker{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(3.4rem,6vw,6rem);line-height:.92;letter-spacing:-.045em}
+.hero-copy p{color:var(--gray);max-width:500px;margin:23px 0 30px;font-size:1rem}
+.btn{display:inline-block;padding:14px 23px;background:var(--black);color:#fff;font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700}.btn:hover{background:var(--red)}
+.note{position:absolute;right:-20px;bottom:25px;background:var(--red);color:#fff;padding:20px;width:190px}.note b{font-size:1.1rem}.note small{display:block;margin-top:4px;color:#f5dfdd}
+section{padding:90px 0}.sectiontop{display:flex;justify-content:space-between;align-items:end;margin-bottom:34px;gap:30px}.sectiontop h2{font-size:clamp(2.4rem,4vw,4rem);line-height:1}.sectiontop p{max-width:440px;color:var(--gray);font-size:.9rem}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.product{background:#fff}.product img{width:100%;height:360px;object-fit:cover;display:block}.info{padding:16px}.info h3{font-size:1.15rem}.info p{color:var(--gray);font-size:.8rem;margin:4px 0 10px}.price{font-weight:800;font-size:.82rem}
+.story{background:var(--black);color:#fff;padding:65px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.story img{width:100%;height:420px;object-fit:cover}.story h2{font-size:clamp(2.5rem,4vw,4rem);line-height:1.02}.story p{color:#bbb6b0;margin:18px 0 25px}.details{display:grid;gap:10px}.details div{border-top:1px solid #ffffff2b;padding:12px 0;font-size:.82rem}.details b{color:#d8908b;margin-right:8px}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.category{min-height:220px;display:flex;align-items:end;padding:25px;background-size:cover;background-position:center;color:#fff;position:relative;overflow:hidden}.category:before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,#000b)}.category div{position:relative}.category h3{font-size:1.65rem}.category span{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em}
+.newsletter{background:#ded6ca;text-align:center;padding:70px 20px}.newsletter h2{font-size:clamp(2.5rem,4vw,4rem)}.newsletter p{max-width:550px;margin:14px auto 25px;color:var(--gray)}.newsletter .btn{background:var(--red)}
+footer{border-top:1px solid var(--line);padding:30px 0;display:flex;justify-content:space-between;color:var(--gray);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
+@media(max-width:900px){nav{grid-template-columns:auto auto}.links{display:none}.actions{text-align:right}.hero{grid-template-columns:1fr}.hero-copy{padding:45px}.products{grid-template-columns:1fr 1fr}.story{grid-template-columns:1fr;padding:40px}.categories{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.hero{padding-top:125px}.heroimg img{height:440px}.hero-copy{padding:35px 25px}.products,.categories{grid-template-columns:1fr}.sectiontop{display:block}.sectiontop p{margin-top:12px}section{padding:65px 0}.story img{height:300px}footer{display:block}}
+</style>
+</head>
+<body>
+<header>
+<div class="top">New season essentials — curated for everyday style</div>
+<div class="wrap"><nav>
+<div class="links"><a href="#new">New</a><a href="#collections">Collections</a><a href="#about">About</a></div>
+<a class="brand" href="#">NB <span>NOVOSIBIRSK</span></a>
+<div class="actions">Search <span class="bag">Bag (0)</span></div>
+</nav></div>
+</header>
+
+<main>
+<section class="wrap hero">
+<div class="heroimg">
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=85" alt="Contemporary fashion editorial portrait">
+<div class="note"><b>NEW EDIT</b><small>Modern pieces selected for effortless everyday looks.</small></div>
+</div>
+<div class="hero-copy">
+<div class="kicker">Autumn / Winter 2026</div>
+<h1>Quiet style.<br>Strong presence.</h1>
+<p>A contemporary fashion space for clean silhouettes, useful wardrobe essentials, and pieces designed to work beyond a single season.</p>
+<a class="btn" href="#new">Shop the edit →</a>
+</div>
+</section>
+
+<section id="new">
+<div class="wrap">
+<div class="sectiontop"><h2>New arrivals</h2><p>A considered selection of everyday pieces, refined basics, and modern wardrobe staples.</p></div>
+<div class="products">
+<article class="product"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=85" alt="Neutral fashion outfit"><div class="info"><h3>Structured Coat</h3><p>Stone / Outerwear</p><span class="price">$189</span></div></article>
+<article class="product"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=85" alt="Minimal contemporary outfit"><div class="info"><h3>Everyday Set</h3><p>Black / Essentials</p><span class="price">$124</span></div></article>
+<article class="product"><img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800&q=85" alt="Fashion jacket detail"><div class="info"><h3>Utility Jacket</h3><p>Olive / Jackets</p><span class="price">$149</span></div></article>
+<article class="product"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=85" alt="Fashion shopping collection"><div class="info"><h3>Daily Collection</h3><p>Curated / Collection</p><span class="price">$98</span></div></article>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap"><div class="story">
+<div><div class="kicker" style="color:#d8908b">Our point of view</div><h2>Less trend.<br>More wardrobe.</h2><p>NB Novosibirsk focuses on pieces that can move through different days, seasons, and personal styles. The goal is simple: fewer complicated choices and more things you actually want to wear.</p>
+<div class="details"><div><b>01</b> Clean silhouettes</div><div><b>02</b> Versatile everyday pieces</div><div><b>03</b> Thoughtful seasonal edits</div><div><b>04</b> Modern, understated styling</div></div></div>
+<img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1000&q=85" alt="Minimal clothing collection in a fashion store">
+</div></div>
+</section>
+
+<section id="collections">
+<div class="wrap">
+<div class="sectiontop"><h2>Shop by mood</h2><p>Build a wardrobe around how you want your day to feel.</p></div>
+<div class="categories">
+<div class="category" style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85')"><div><span>01 / Essentials</span><h3>Everyday</h3></div></div>
+<div class="category" style="background-image:url('https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=85')"><div><span>02 / Statement</span><h3>After Hours</h3></div></div>
+<div class="category" style="background-image:url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=900&q=85')"><div><span>03 / Seasonal</span><h3>New Season</h3></div></div>
+</div>
+</div>
+</section>
+
+<section class="newsletter"><div class="wrap">
+<h2>Stay in the edit.</h2><p>Get occasional updates on new collections, seasonal ideas, and curated wardrobe inspiration.</p>
+<a class="btn" href="mailto:hello@nb-novosibirsk.store">Join the list →</a>
+</div></section>
+</main>
+
+<footer class="wrap"><span>© 2026 NB Novosibirsk Store</span><span>Fashion • Essentials • Collections</span></footer>
+</body>
+</html>
